@@ -33,3 +33,7 @@ def arith(seq):
             return False
 
     return True
+
+
+def geom(seq):
+    pass
