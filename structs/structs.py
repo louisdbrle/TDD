@@ -44,5 +44,6 @@ class LIFO:
             return value
 
 
-class LILO:
-    pass
+class LILO(FIFO):
+    def __init__(self):
+        super().__init__()
