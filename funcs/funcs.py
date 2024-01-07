@@ -10,3 +10,7 @@ def mins_N(nums, N):
         return []
     nums.sort()
     return nums[:N]
+
+
+def prime(num):
+    pass
