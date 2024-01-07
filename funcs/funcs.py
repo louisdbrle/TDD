@@ -35,5 +35,13 @@ def arith(seq):
     return True
 
 
-def geom(seq):
-    pass
+def geo(seq):
+    if len(seq) < 2:
+        return False
+
+    ratio = seq[1] / seq[0]
+    for i in range(2, len(seq)):
+        if seq[i] / seq[i - 1] != ratio:
+            return False
+
+    return True

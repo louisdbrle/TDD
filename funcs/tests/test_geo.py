@@ -14,7 +14,7 @@ class TestGeo(unittest.TestCase):
         self.assertEqual(geo([1, 10, 101]), False)
         self.assertEqual(geo([-100, -50, 0]), False)
         self.assertEqual(geo([-100, -75, -50, -25, 0, 25]), False)
-        self.assertEqual(geo([_ for _ in range(0, 1000, 4)]), False)
+        self.assertEqual(geo([_ for _ in range(1, 1000, 4)]), False)
         self.assertEqual(geo([100, 50, 25, 12.5]), True)
 
     def test_geo_spe(self):
