@@ -24,4 +24,12 @@ def prime(num):
 
 
 def arith(seq):
-    pass
+    if len(seq) < 2:
+        return False
+
+    diff = seq[1] - seq[0]
+    for i in range(2, len(seq)):
+        if seq[i] - seq[i - 1] != diff:
+            return False
+
+    return True

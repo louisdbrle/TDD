@@ -14,7 +14,7 @@ class TestArith(unittest.TestCase):
         self.assertEqual(arith([1, 10, 20]), False)
         self.assertEqual(arith([-100, -50, 0]), True)
         self.assertEqual(arith([-100, -75, -50, -25, 0, 25]), True)
-        self.assertEqual(arith([_ for _ in range(1000, 4)], True))
+        self.assertEqual(arith([_ for _ in range(0, 1000, 4)]), True)
 
     def test_arith_spe(self):
         self.assertEqual(arith([]), False)
