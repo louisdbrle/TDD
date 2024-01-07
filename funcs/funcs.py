@@ -1,2 +1,5 @@
 def maxs_3(nums):
-    pass
+    if len(nums) < 3:
+        return []
+    nums.sort()
+    return nums[-3:]
