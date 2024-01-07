@@ -21,3 +21,7 @@ def prime(num):
             return False
 
     return True
+
+
+def arith(seq):
+    pass
