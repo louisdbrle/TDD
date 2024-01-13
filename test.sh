@@ -18,3 +18,12 @@ echo "Testing structs"
 python3 -m unittest ${TEST_RUNNER}
 
 echo "Done testing structs"
+
+TEST_RUNNER=${PROJECT_DIR}/bstpy/tests/bstpy_tests_main.py
+MODULE_DIR=${PROJECT_DIR}/bstpy
+
+echo "Testing bstpy"
+
+python3 -m unittest ${TEST_RUNNER}
+
+echo "Done testing bstpy"
